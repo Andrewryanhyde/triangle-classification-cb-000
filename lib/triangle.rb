@@ -7,10 +7,6 @@ class Triangle
     @side_3 = side_3
   end
 
-  class TriangleError < StandardError
-
-  end
-
   def kind
     if @side_1 <= 0 || @side_2 <= 0 || @side_3 <= 0
       raise TriangleError
@@ -28,6 +24,9 @@ class Triangle
     else
       :scalene
     end
+  end
+
+  class TriangleError < StandardError
   end
 
 end
