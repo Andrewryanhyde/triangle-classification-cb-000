@@ -7,7 +7,7 @@ class Triangle
     @side_3 = side_3
   end
 
-  class TriangleError
+  class TriangleError < StandardError
 
   end
 
